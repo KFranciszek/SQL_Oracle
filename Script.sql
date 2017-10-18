@@ -63,3 +63,11 @@ FROM PRACOWNICY P INNER JOIN ETATY E
 ON P.PLACA_POD BETWEEN E.PLACA_MIN AND E.PLACA_MAX
 WHERE E.NAZWA = 'SEKRETARKA'
 
+
+select  nazwisko, sum(Id_prac + id_zesp + placa_pod + NVL(placa_dod, 0)) AS SUMA, 
+  case when mod(sum(Id_prac + id_zesp + placa_pod + NVL(placa_dod, 0)),3) = 0 then 'dzielne'
+  else 'brak dzielnika'
+  end modulo
+  FROM PRACOWNICY
+  GROUP  BY NAZWISKO
+
