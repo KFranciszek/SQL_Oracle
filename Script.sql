@@ -71,3 +71,12 @@ select  nazwisko, sum(Id_prac + id_zesp + placa_pod + NVL(placa_dod, 0)) AS SUMA
   FROM PRACOWNICY
   GROUP  BY NAZWISKO
 
+select id_zesp, COUNT(NAZWISKO) AS LICZBA
+from pracownicy
+GROUP BY ID_ZESP
+
+select NAZWISKO, lengtH(NAZWISKO)
+from pracownicy
+GROUP BY NAZWISKO
+
+
