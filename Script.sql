@@ -41,6 +41,11 @@ from pracownicy p inner join zespoly z
 on p.id_zesp = z.id_zesp
 
 
+select p.nazwisko, p.id_zesp, z.adres
+from pracownicy p inner join zespoly z
+on p.id_zesp = z.id_zesp
+where z.ADRES LIKE 'P%'
+
 select p.nazwisko, p.etat, p.id_zesp, z.nazwa, z.ADRES
 from pracownicy p inner join zespoly z
 on p.id_zesp = z.id_zesp
