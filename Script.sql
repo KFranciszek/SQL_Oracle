@@ -94,3 +94,9 @@ TO_CHAR(TO_DATE(ZATRUDNIONY,'YY/MM/DD'),'MONTH') AS MONTH,
 TO_CHAR(TO_DATE(ZATRUDNIONY,'YY/MM/DD'),'YY DAY')AS YEAR_DAY
 from pracownicy 
 where lengtH(NAZWISKO) < 8 AND  ETAT LIKE '%A%' OR ETAT LIKE '%E%'
+
+select nazwisko, zatrudniony, 
+Extract(year from zatrudniony)-1980 as lata,
+Extract(year from zatrudniony)-1980,
+zatrudniony - to_date('80/01/01')
+from pracownicy
