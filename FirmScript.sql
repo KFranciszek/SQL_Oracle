@@ -22,7 +22,7 @@ insert into faktura VALUES (232017, 'Sprzedaz pieczywa', 30, 6);
 insert into faktura VALUES (102017, 'Sprzedaz posilkow', 60, 23);
 insert into faktura VALUES (442017, 'Sprzedaz ubran', 300, 23);
 insert into faktura VALUES (12017, 'Usluga fryzjerska', 50, 7);
-insert into faktura VALUES (332017, 'Sprzedaz produktow zywnosciowych', 150, 23);
+insert into faktura VALUES (332017, 'Sprzedaz produktow zywnosciowych', 150, 23); 
 
 
 
