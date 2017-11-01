@@ -1,4 +1,4 @@
-MY  SAMPLE SELECT  for Chinook database  https://github.com/lerocha/chinook-database 
+-- MY  SAMPLE SELECT  for Chinook database  https://github.com/lerocha/chinook-database 
 
 SELECT  *
 FROM TRACK
