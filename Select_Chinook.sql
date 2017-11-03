@@ -39,3 +39,34 @@ from album al inner join track t
 on al.albumid = t.albumid
 group by al.TITLE
 
+select *
+from CUSTOMER
+where phone is null
+
+select *
+from customer
+where company is not null
+
+select sum(total)
+from invoice
+
+select *
+from invoice
+
+select customerid, to_char(invoicedate, 'YYYY Month DD')
+from invoice
+
+select t.name as piosenka, g.name as gatunek
+from track t inner join genre g
+on t.genreid = g.genreid
+
+
+select g.name as gatunek, count(g.name) as ilosc
+from track t inner join genre g
+on t.genreid = g.genreid
+GROUP BY g.NAME
+
+select t.name as piosenka, g.name as gatunek
+from track t inner join genre g
+on t.genreid = g.genreid
+where g.name = 'Science Fiction'
